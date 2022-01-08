@@ -9,7 +9,9 @@ export const Header: VFC = () => {
         <h2 className="font-semibold text-gray-900 text-xl">Portfolio</h2>
         <nav>
           <a
-            href="/new"
+            href="https://github.com/TakaShinoda/portfolio_v4.0"
+            target="_blank"
+            rel="noreferrer noopener"
             className="group inline-flex items-center rounded-md text-3xl font-medium pl-2 pr-3 py-2 shadow-sm z-10 "
           >
             <FontAwesomeIcon icon={faGithub} />
