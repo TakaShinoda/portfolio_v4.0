@@ -1,6 +1,5 @@
 import React, { VFC } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { GitHub } from 'iconoir-react'
 
 export const Header: VFC = () => {
   return (
@@ -12,9 +11,9 @@ export const Header: VFC = () => {
             href="https://github.com/TakaShinoda/portfolio_v4.0"
             target="_blank"
             rel="noreferrer noopener"
-            className="group inline-flex items-center rounded-md text-3xl font-medium pl-2 pr-3 py-2 shadow-sm"
+            className="group inline-flex items-center rounded-md text-xl font-medium pl-2 pr-3 py-2"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <GitHub />
           </a>
         </nav>
       </div>
