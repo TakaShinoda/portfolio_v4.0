@@ -1,5 +1,5 @@
 import React, { VFC } from 'react'
-import { GitHub, Twitter } from 'iconoir-react'
+import { GitHub, Twitter, PinAlt, Building } from 'iconoir-react'
 
 export const Personal: VFC = () => {
   return (
@@ -11,10 +11,26 @@ export const Personal: VFC = () => {
         />
       </div>
       <div>
-        <h2 className="text-gray-800 dark:text-white text-3xl font-semibold">篠田 貴大</h2>
+        <h2 className="text-gray-800 dark:text-white text-3xl font-semibold">
+          篠田 貴大
+        </h2>
+        <div className="mt-2">
+          <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
+            <span className="group inline-flex items-center">
+              <PinAlt />
+              東京都
+            </span>
+          </p>
+          <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
+            <span className="group inline-flex items-center">
+              <Building />
+              弁護士ドットコム株式会社
+            </span>
+          </p>
+        </div>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          弁護士ドットコムでクラウドサインのフロントエンドエンジニアをしています。<br />
-
+          クラウドサインのフロントエンドエンジニアをしています。
+          <br />
         </p>
       </div>
       <div className="mt-2 mb-2">

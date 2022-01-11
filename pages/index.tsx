@@ -9,10 +9,10 @@ const Home: NextPage = () => {
         <div>
           <Personal />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        {/* <div className="grid grid-cols-2 gap-4">
           <div>1</div>
           <div>2</div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
