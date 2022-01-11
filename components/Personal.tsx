@@ -7,12 +7,12 @@ export const Personal: VFC = () => {
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
         <img
           className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
-          src="./icon.jpg"
+          src="https://4.bp.blogspot.com/-bTipX3Vmpts/Wn1ZgUbOHXI/AAAAAAABKM4/b31Jvq8aWssiswuiO19BAJmmAC5WAzXwACLcBGAs/s400/character_boy_normal.png"
         />
       </div>
       <div>
         <h2 className="text-gray-800 dark:text-white text-3xl font-semibold">
-          篠田 貴大
+          クラウド 契助
         </h2>
         <div className="mt-2">
           <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
