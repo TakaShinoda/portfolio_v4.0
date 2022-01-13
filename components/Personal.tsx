@@ -3,7 +3,7 @@ import { GitHub, Twitter, PinAlt, Building } from 'iconoir-react'
 
 export const Personal: VFC = () => {
   return (
-    <div className="max-w-6xl py-4 px-8 shadow-lg rounded-lg my-20 m-auto">
+    <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
         <img
           className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
