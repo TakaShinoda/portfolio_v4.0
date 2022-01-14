@@ -8,7 +8,7 @@ type Props = {
 
 export const CareerItem: VFC<Props> = ({ career, from, to }) => {
   return (
-    <li className="mb-4">
+    <li className="mb-5">
       <div className="flex items-center mb-1">
         <div className="bg-gray-300 rounded-full h-3 w-3"></div>
         <div className="flex-1 ml-4 font-medium text-gray-800 dark:text-white">
