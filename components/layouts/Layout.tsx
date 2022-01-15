@@ -11,7 +11,7 @@ export const Layout: VFC<Props> = ({ children }) => {
     <>
       <Head>
         <title>console.log(me)</title>
-        <meta name="description" content="portfolio" />
+        <meta name="portfolio site" content="portfolio" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
