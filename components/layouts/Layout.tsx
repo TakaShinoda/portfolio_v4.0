@@ -11,9 +11,10 @@ export const Layout: VFC<Props> = ({ children }) => {
     <>
       <Head>
         <title>console.log(me)</title>
+        <meta charSet="utf-8" />
         <meta name="portfolio site" content="portfolio" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charSet="utf-8" />
+        <meta name="Description" content="篠田貴大のポートフォリオサイト"></meta>
 
         <meta property="og:url" content="https://portfolio-v4-0-takashinoda.vercel.app/" />
         <meta property="og:title" content="console.log(me)" />
