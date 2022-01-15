@@ -1,0 +1,28 @@
+name: weekly deploy website
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: branch|tag|SHA to checkout
+        default: "main"
+        required: true
+  schedule:
+    - cron: '30 12 * * 5'
+job:
+  deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    with:
+      ref: ${{ github.event.inputs.ref }}
+    - name: Install NPM packages
+      run: npm ci
+    - name: Build Posts
+      run: npm run build:posts
+    - uses: amondnet/vercel-action@v20
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+        vercel-args: "--prod"
+        working-directory: ./
