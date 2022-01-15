@@ -8,11 +8,14 @@ on:
         required: true
   schedule:
     - cron: '30 12 * * 5'
-job:
+jobs:
   deploy:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
+    uses: actions/setup-node@v1
+    with:
+      node-version: 16.x
     with:
       ref: ${{ github.event.inputs.ref }}
     - name: Install NPM packages
