@@ -10,7 +10,7 @@ export const Layout: VFC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>portfolio</title>
+        <title>console.log(me)</title>
         <meta name="description" content="portfolio" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />

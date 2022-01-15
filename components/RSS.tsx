@@ -32,6 +32,7 @@ export const RSS: VFC = () => {
                   <span className="flex">
                     <img
                       src={getFaviconSrcFromLink(content.link)}
+                      alt='遷移先サイトの画像'
                       className="w-4 h-4 mt-1 mr-1"
                     />
                     <span className='className="font-medium text-gray-800 dark:text-white'>
