@@ -9,7 +9,7 @@ on:
         description: branch|tag|SHA to checkout
         default: 'main'
         required: true
-  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
+  # 毎日日本時間の 18時 に GitHub Actions が実行される (cron の時刻は UST)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
     - cron:  '0 9 * * *'
@@ -38,3 +38,4 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
           working-directory: ./
+
