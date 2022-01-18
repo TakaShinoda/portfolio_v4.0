@@ -7,7 +7,7 @@ export const Personal: VFC = () => {
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
         <img
           className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
-          alt='プロフィール画像'
+          alt="プロフィール画像"
           src="./icon.jpg"
         />
       </div>
@@ -40,7 +40,7 @@ export const Personal: VFC = () => {
           target="_blank"
           rel="noreferrer noopener"
           className="group inline-flex items-center text-lg font-medium pr-3 py-2 text-gray-800 dark:text-white"
-          aria-label='link to github'
+          aria-label="link to github"
         >
           <GitHub />
         </a>
@@ -49,7 +49,7 @@ export const Personal: VFC = () => {
           target="_blank"
           rel="noreferrer noopener"
           className="group inline-flex items-center text-lg font-medium pl-2 pr-3 py-2 text-gray-800 dark:text-white"
-          aria-label='link to twitter'
+          aria-label="link to twitter"
         >
           <Twitter />
         </a>
