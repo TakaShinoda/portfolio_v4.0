@@ -5,7 +5,7 @@ import { Personal } from '../components/Personal'
 describe('表示項目のテスト', () => {
   test('氏名が表示されているか', () => {
     render(<Personal />)
-    expect(screen.getByRole('heading', { name: '篠田 貴大' }))
+    expect(screen.getByRole('heading')).toHaveTextContent('篠田 貴大')
   })
 
   test('所在地が表示されているか', () => {
