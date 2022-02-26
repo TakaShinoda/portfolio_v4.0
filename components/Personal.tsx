@@ -1,5 +1,5 @@
 import React, { VFC } from 'react'
-import { GitHub, Twitter, PinAlt, Building } from 'iconoir-react'
+import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 
 export const Personal: VFC = () => {
   return (
@@ -30,7 +30,7 @@ export const Personal: VFC = () => {
           </p>
         </div>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          クラウドサインのフロントエンドエンジニアをしています。
+          クラウドサインのフロントエンドエンジニアです。
           <br />
         </p>
       </div>
