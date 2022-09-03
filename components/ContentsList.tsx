@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { VFC } from 'react'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'

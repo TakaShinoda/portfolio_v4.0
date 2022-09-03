@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { VFC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 
