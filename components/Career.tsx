@@ -1,8 +1,8 @@
-import React, { VFC } from 'react'
+import React, { FC } from 'react'
 import { User } from 'iconoir-react'
 import { CareerItemList } from './CareerItemList'
 
-export const Career: VFC = () => {
+export const Career: FC = () => {
   return (
     <div className="flex rounded-lg shadow-lg h-full p-8 flex-col w-full">
       <div className="flex items-center mb-3">

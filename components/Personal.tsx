@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { VFC } from 'react'
+import React, { FC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 
-export const Personal: VFC = () => {
+export const Personal: FC = () => {
   return (
     <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">

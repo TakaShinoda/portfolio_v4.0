@@ -1,8 +1,8 @@
-import React, { VFC } from 'react'
+import React, { FC } from 'react'
 import { RssFeed } from 'iconoir-react'
 import { ContentsList } from './ContentsList'
 
-export const RSS: VFC = () => {
+export const RSS: FC = () => {
   return (
     <div className="flex rounded-lg shadow-lg h-full p-8 flex-col">
       <div className="flex items-center mb-3">

@@ -1,4 +1,4 @@
-import React, { VFC } from 'react'
+import React, { FC } from 'react'
 
 type Props = {
   career: string
@@ -6,7 +6,7 @@ type Props = {
   to?: string
 }
 
-export const CareerItem: VFC<Props> = ({ career, from, to }) => {
+export const CareerItem: FC<Props> = ({ career, from, to }) => {
   return (
     <li className="mb-5">
       <div className="flex items-center mb-1">

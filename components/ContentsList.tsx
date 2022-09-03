@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { VFC } from 'react'
+import React, { FC } from 'react'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import contentsData from '../.contents/posts.json'
@@ -7,7 +7,7 @@ import { getFaviconSrcFromLink } from '../utils/helper'
 
 dayjs.extend(relativeTime)
 
-export const ContentsList: VFC = () => {
+export const ContentsList: FC = () => {
   return (
     <>
       {contentsData.map((content, i) => (
