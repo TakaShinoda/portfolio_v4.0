@@ -6,7 +6,7 @@ export const CareerItemList: FC = () => {
     <ul className="list-none m-0 p-0" data-testid="career-item-list">
       <CareerItem career="弁護士ドットコム株式会社" from="2021/11" />
       <CareerItem
-        career="飲食系の某IT企業"
+        career="飲食系のベンチャー企業"
         from="2020/4"
         to="2021/10"
       />
