@@ -2,7 +2,15 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { Personal } from '../components/Personal'
 
-describe('表示項目のテスト', () => {
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      locale: "ja",
+    }
+  },
+}))
+
+describe('日本語での表示項目テスト', () => {
   test('氏名が表示されているか', () => {
     render(<Personal />)
     expect(screen.getByRole('heading')).toHaveTextContent('篠田 貴大')
@@ -20,10 +28,6 @@ describe('表示項目のテスト', () => {
 
   test('一言が表示されているか', () => {
     render(<Personal />)
-    expect(
-      screen.getByText(
-        'Frontend Developer at CloudSign'
-      )
-    )
+    expect(screen.getByText('クラウドサインのフロントエンドエンジニアです'))
   })
 })
