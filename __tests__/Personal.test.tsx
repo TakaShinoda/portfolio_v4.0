@@ -22,7 +22,7 @@ describe('表示項目のテスト', () => {
     render(<Personal />)
     expect(
       screen.getByText(
-        'クラウドサインのフロントエンドエンジニアです。'
+        'Frontend Developer at CloudSign'
       )
     )
   })

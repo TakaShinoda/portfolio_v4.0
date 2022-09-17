@@ -31,8 +31,7 @@ export const Personal: FC = () => {
           </p>
         </div>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          クラウドサインのフロントエンドエンジニアです。
-          <br />
+          Frontend Developer at CloudSign
         </p>
       </div>
       <div className="mt-2 mb-2">
