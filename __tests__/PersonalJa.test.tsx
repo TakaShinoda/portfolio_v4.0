@@ -5,7 +5,7 @@ import { Personal } from '../components/Personal'
 jest.mock('next/router', () => ({
   useRouter() {
     return {
-      locale: "ja",
+      locale: 'ja',
     }
   },
 }))
