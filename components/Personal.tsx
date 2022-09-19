@@ -1,13 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
-import { en } from '../i18n/en'
-import { ja } from '../i18n/ja'
+import { useLocale } from '../hooks/useLocale'
 
 export const Personal: FC = () => {
-  const { locale } = useRouter()
-  const t = locale === 'en' ? en : ja
+  const { t } = useLocale()
   return (
     <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
@@ -35,9 +32,7 @@ export const Personal: FC = () => {
             </span>
           </p>
         </div>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
-          {t.bio}
-        </p>
+        <p className="mt-2 text-gray-600 dark:text-gray-300">{t.bio}</p>
       </div>
       <div className="mt-2 mb-2">
         <a

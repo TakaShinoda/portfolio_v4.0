@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { useRouter } from 'next/router'
 import { Translate } from 'iconoir-react'
+import { useLocale } from '../hooks/useLocale'
 
 export const TranslateButton: FC = () => {
-  const { locale } = useRouter()
+  const { locale } = useLocale()
   const isEn = locale === 'en' ? true : false
 
   const changeLocale = () => {
