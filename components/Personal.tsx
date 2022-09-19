@@ -1,17 +1,19 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { FC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 import { useLocale } from '../hooks/useLocale'
+import Image from 'next/future/image'
 
 export const Personal: FC = () => {
   const { t } = useLocale()
   return (
     <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
-        <img
+        <Image
           className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
           alt="プロフィール画像"
-          src="./icon.jpg"
+          src="/icon.jpg"
+          width={500}
+          height={500}
         />
       </div>
       <div>
