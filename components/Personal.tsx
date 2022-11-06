@@ -11,7 +11,7 @@ export const Personal: FC = () => {
         <Image
           className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
           alt="プロフィール画像"
-          src="/icon.jpg"
+          src="/icon.webp"
           width={500}
           height={500}
         />
