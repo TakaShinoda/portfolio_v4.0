@@ -14,14 +14,14 @@ export const Layout: FC<Props> = ({ children }) => {
         <meta charSet="utf-8" />
         <meta name="portfolio site" content="portfolio" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="篠田貴大のポートフォリオサイト"></meta>
+        <meta name="description" content="@tttttt_621_sのサイト"></meta>
 
-        <meta property="og:url" content="https://portfolio-v4-0-takashinoda.vercel.app/" />
+        <meta property="og:url" content="https://t621.vercel.app/" />
         <meta property="og:title" content="console.log(me)" />
         <meta property="og:site_name" content="console.log(me)" />
-        <meta property="og:description" content="篠田貴大のポートフォリオサイト" />
+        <meta property="og:description" content="@tttttt_621_sのサイト" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://portfolio-v4-0-takashinoda.vercel.app/icon.jp" />
+        <meta property="og:image" content="https://t621.vercel.app/_next/image?url=%2Ficon.webp&w=1080&q=75" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         
