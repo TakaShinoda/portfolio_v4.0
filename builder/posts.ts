@@ -4,12 +4,19 @@ import { sites } from '../sites'
 import { Sites, PostItem } from '../types/types'
 export default {}
 
+type Enclosure = {
+  url: string
+  length: string
+  type: string
+}
+
 type FeedItem = {
     title: string
     link: string
     contentSnippet?: string
     isoDate?: string
     dateMiliSeconds: number
+    enclosure?: Enclosure
 }
 
 const parser = new Parser()
@@ -21,13 +28,14 @@ async function fetchFeedItems(url: string) {
 
     // return item which has title and link
     return feed.items
-    .map(({ title, contentSnippet, link, isoDate }) => {
+    .map(({ title, contentSnippet, link, isoDate, enclosure }) => {
         return {
           title,
           contentSnippet: contentSnippet?.replace(/\n/g, ""),
           link,
           isoDate,
           dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
+          enclosure
         }
     })
     .filter(({ title, link }) => title && link) as FeedItem[]
