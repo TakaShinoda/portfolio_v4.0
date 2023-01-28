@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 import { useLocale } from '../hooks/useLocale'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 export const Personal: FC = () => {
   const { t } = useLocale()
