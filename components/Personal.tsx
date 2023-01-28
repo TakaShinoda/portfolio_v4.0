@@ -1,20 +1,17 @@
 import React, { FC } from 'react'
 import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
 import { useLocale } from '../hooks/useLocale'
-import Image from 'next/image'
+import { Avatar, AvatarImage, AvatarFallback } from './ui/Avatar'
 
 export const Personal: FC = () => {
   const { t } = useLocale()
   return (
     <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
-        <Image
-          className="w-28 h-28 object-cover rounded-full border-2 border-cyan-500"
-          alt="プロフィール画像"
-          src="/icon.webp"
-          width={500}
-          height={500}
-        />
+        <Avatar className="w-28 h-28 border-2 border-cyan-500">
+          <AvatarImage src="/icon.webp" alt="篠田貴大のプロフィール画像" />
+          <AvatarFallback>篠田貴大のプロフィール画像</AvatarFallback>
+        </Avatar>
       </div>
       <div>
         <h2 className="text-gray-800 dark:text-white text-3xl font-semibold">
