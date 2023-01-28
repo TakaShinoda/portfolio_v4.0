@@ -9,8 +9,8 @@ export const Personal: FC = () => {
     <div className="p-8 shadow-lg rounded-lg my-8">
       <div className="flex justify-center md:justify-start -mt-16 mb-4">
         <Avatar className="w-28 h-28 border-2 border-cyan-500">
-          <AvatarImage src="/icon.webp" alt="篠田貴大のプロフィール画像" />
-          <AvatarFallback>篠田貴大のプロフィール画像</AvatarFallback>
+          <AvatarImage src="/icon.webp" alt="@tttttt_621_sのプロフィール画像" />
+          <AvatarFallback>@tttttt_621_s</AvatarFallback>
         </Avatar>
       </div>
       <div>

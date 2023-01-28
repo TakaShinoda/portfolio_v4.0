@@ -2,6 +2,7 @@ import { forwardRef, ElementRef, ComponentPropsWithoutRef } from 'react'
 import * as AvatarPrimitive from '@radix-ui/react-avatar'
 import { cn } from '../../utils/cn'
 
+// forwardRef<refの対象, props> 
 const Avatar = forwardRef<
   ElementRef<typeof AvatarPrimitive.Root>,
   ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>
@@ -15,6 +16,7 @@ const Avatar = forwardRef<
     {...props}
   />
 ))
+// forwardRef で返す関数が無記名関数なアロー関数になっているのでここに関数名を付ける
 Avatar.displayName = AvatarPrimitive.Root.displayName
 
 const AvatarImage = forwardRef<
