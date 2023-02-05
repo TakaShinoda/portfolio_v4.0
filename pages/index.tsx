@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/layouts/Layout'
 import { Personal } from '../components/Personal'
+import { Article } from '../components/Article'
 import { Career } from '../components/Career'
 import { RSS } from '../components/RSS'
 
@@ -9,8 +10,11 @@ const Home: NextPage = () => {
     <Layout>
       <section className="text-gray-800 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col w-full mb-20">
+          <div className="flex flex-col w-full mb-5">
             <Personal />
+          </div>
+          <div className="flex flex-col w-full mb-20">
+            <Article />
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2">
