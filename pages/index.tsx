@@ -3,6 +3,7 @@ import { Layout } from '../components/layouts/Layout'
 import { Personal } from '../components/Personal'
 import { Career } from '../components/Career'
 import { RSS } from '../components/RSS'
+import { Blog } from '../components/Blog'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,12 @@ const Home: NextPage = () => {
             <div className="p-4 md:w-1/2">
               <RSS />
             </div>
+          </div>
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 md:w-1/2">
+              <Blog />
+            </div>
+            <div className="p-4 md:w-1/2"></div>
           </div>
         </div>
       </section>
