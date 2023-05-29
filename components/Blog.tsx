@@ -11,7 +11,7 @@ export const Blog: FC = () => {
           <Notes />
         </div>
         <h2 className="text-gray-800 dark:text-white text-lg title-font font-medium">
-          BLOG
+          Blog
         </h2>
       </div>
       <div className="flex-grow">
