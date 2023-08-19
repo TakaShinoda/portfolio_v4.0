@@ -9,14 +9,14 @@ export const Header: FC = () => {
         <h2 className="font-semibold text-gray-800 dark:text-white text-2xl">
           console.log(me)
         </h2>
-        <nav>
+        {/* <nav>
           <span className="group inline-flex items-center text-xl font-medium pl-2 pr-4 py-2">
             <TranslateButton />
           </span>
           <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
             <ChangeThemeButton />
           </span>
-        </nav>
+        </nav> */}
       </div>
     </header>
   )
