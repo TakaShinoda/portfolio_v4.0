@@ -15,23 +15,28 @@ export const Personal: FC = () => {
       </div>
       <div>
         <h2 className="text-gray-800 dark:text-white text-3xl font-semibold">
-          {t.name}
+          {/* {t.name} */}
+          篠田 貴大
         </h2>
         <div className="mt-2">
           <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
             <span className="group inline-flex items-center">
               <PinAlt />
-              {t.address}
+              {/* {t.address} */}
+              東京都
             </span>
           </p>
           <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
             <span className="group inline-flex items-center">
               <Building />
-              {t.company}
+              {/* {t.company} */}
+              弁護士ドットコム株式会社
             </span>
           </p>
         </div>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">{t.bio}</p>
+        <p className="mt-2 text-gray-600 dark:text-gray-300">
+          {/* {t.bio} */}クラウドサインのフロントエンドエンジニアです
+        </p>
       </div>
       <div className="mt-2 mb-2">
         <a
