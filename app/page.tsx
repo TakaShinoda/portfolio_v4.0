@@ -2,6 +2,7 @@ import { Personal } from '../components/Personal'
 import { Career } from '../components/Career'
 import { RSS } from '../components/RSS'
 import { Blog } from '../components/Blog'
+import { Speaker } from '../components/Speaker'
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
           <div className="p-4 md:w-1/2">
             <Blog />
           </div>
-          <div className="p-4 md:w-1/2"></div>
+          <div className="p-4 md:w-1/2">
+            <Speaker />
+          </div>
         </div>
       </div>
     </section>
