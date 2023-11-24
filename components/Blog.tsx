@@ -2,8 +2,19 @@
 import React, { FC } from 'react'
 import { Notes } from 'iconoir-react'
 import { getFaviconSrcFromLink } from '../utils/helper'
+import type { Blog as BlogData } from '../types/types'
 
-export const Blog: FC = () => {
+const getBlogs = async () => {
+  const res = await fetch('https://t621.vercel.app/api/blog', {
+    cache: 'no-cache',
+  })
+
+  const data = await res.json()
+  return data as BlogData[]
+}
+
+export const Blog: FC = async () => {
+  const blogs = await getBlogs()
   return (
     <div className="flex rounded-lg shadow-lg h-full p-8 flex-col">
       <div className="flex items-center mb-3">
@@ -15,52 +26,27 @@ export const Blog: FC = () => {
         </h2>
       </div>
       <div className="flex-grow">
-        <div className="mb-5">
-          <a
-            href="https://creators.bengo4.com/entry/2023/03/27/083000"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span className="flex">
-              <img
-                src={getFaviconSrcFromLink(
-                  'https://creators.bengo4.com/entry/2023/03/27/083000'
-                )}
-                alt="弁護士ドットコム クリエーターズブログのファビコン画像"
-                className="w-4 h-4 mt-1 mr-1"
-              />
-              <span className='className="font-medium text-gray-800 dark:text-white'>
-                CloudSign の社内用管理画面を Vue2.7 に移行した話
+        {blogs.map((blog, i) => (
+          <div className="mb-5" key={i}>
+            <a href={blog.url} target="_blank" rel="noreferrer noopener">
+              <span className="flex">
+                <img
+                  src={getFaviconSrcFromLink(
+                    'https://creators.bengo4.com/entry/2023/03/27/083000'
+                  )}
+                  alt="弁護士ドットコム クリエーターズブログのファビコン画像"
+                  className="w-4 h-4 mt-1 mr-1"
+                />
+                <span className='className="font-medium text-gray-800 dark:text-white'>
+                  {blog.title}
+                </span>
               </span>
-            </span>
-            <div className="text-xs font-medium mt-1 mb-2 text-gray-500 dark:text-gray-300">
-              2023-03-27
-            </div>
-          </a>
-        </div>
-        <div className="mb-5">
-          <a
-            href="https://creators.bengo4.com/entry/2022/07/28/083000"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span className="flex">
-              <img
-                src={getFaviconSrcFromLink(
-                  'https://creators.bengo4.com/entry/2022/07/28/083000'
-                )}
-                alt="弁護士ドットコム クリエーターズブログのファビコン画像"
-                className="w-4 h-4 mt-1 mr-1"
-              />
-              <span className='className="font-medium text-gray-800 dark:text-white'>
-                クラウドサインのフロントエンドミーティングと、その勉強会で発表した話
-              </span>
-            </span>
-            <div className="text-xs font-medium mt-1 mb-2 text-gray-500 dark:text-gray-300">
-              2022-07-28
-            </div>
-          </a>
-        </div>
+              <div className="text-xs font-medium mt-1 mb-2 text-gray-500 dark:text-gray-300">
+                {blog.date}
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   )
