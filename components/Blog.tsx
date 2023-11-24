@@ -40,29 +40,6 @@ export const Blog: FC = () => {
         </div>
         <div className="mb-5">
           <a
-            href="https://creators.bengo4.com/entry/2022/11/15/083000"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span className="flex">
-              <img
-                src={getFaviconSrcFromLink(
-                  'https://creators.bengo4.com/entry/2022/11/15/083000'
-                )}
-                alt="弁護士ドットコム クリエーターズブログのファビコン画像"
-                className="w-4 h-4 mt-1 mr-1"
-              />
-              <span className='className="font-medium text-gray-800 dark:text-white'>
-                Vue Fes Japan Online 2022 に登壇 & 参加しました
-              </span>
-            </span>
-            <div className="text-xs font-medium mt-1 mb-2 text-gray-500 dark:text-gray-300">
-              2022-11-15
-            </div>
-          </a>
-        </div>
-        <div className="mb-5">
-          <a
             href="https://creators.bengo4.com/entry/2022/07/28/083000"
             target="_blank"
             rel="noreferrer noopener"
