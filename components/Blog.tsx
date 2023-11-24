@@ -5,7 +5,6 @@ import { getFaviconSrcFromLink } from '../utils/helper'
 import blogsData from '../data/blogs.json'
 
 export const Blog: FC = () => {
-  console.log(blogsData)
   return (
     <div className="flex rounded-lg shadow-lg h-full p-8 flex-col">
       <div className="flex items-center mb-3">
