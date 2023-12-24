@@ -1,8 +1,8 @@
-import { Personal } from '../components/Personal'
-import { Career } from '../components/Career'
-import { RSS } from '../components/RSS'
-import { Blog } from '../components/Blog'
-import { Speaker } from '../components/Speaker'
+import { Personal } from '../../components/Personal'
+import { Career } from '../../components/Career'
+import { RSS } from '../../components/RSS'
+import { Blog } from '../../components/Blog'
+import { Speaker } from '../../components/Speaker'
 
 export default function Home() {
   return (
