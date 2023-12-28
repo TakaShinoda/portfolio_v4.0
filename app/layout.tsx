@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Layout } from '../components/layouts/Layout'
+import { Layout } from '@/layouts/Layout'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
