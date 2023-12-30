@@ -1,8 +1,8 @@
-type Blog = {
-  title: string
-  date: string
-  url: string
-}
+// type Blog = {
+//   title: string
+//   date: string
+//   url: string
+// }
 
 export const blogData = [
   {
@@ -20,4 +20,5 @@ export const blogData = [
     date: '2022-07-28',
     url: 'https://creators.bengo4.com/entry/2022/07/28/083000'
   }
-] as const satisfies Blog[]
+] as const
+// ] as const satisfies Blog[]
