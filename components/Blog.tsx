@@ -2,7 +2,7 @@
 import React, { FC } from 'react'
 import { Notes } from 'iconoir-react'
 import { getFaviconSrcFromLink } from '../utils/helper'
-import blogsData from '../data/blogs.json'
+import { blogData }from '../data/blog'
 
 export const Blog: FC = () => {
   return (
@@ -16,7 +16,7 @@ export const Blog: FC = () => {
         </h2>
       </div>
       <div className="flex-grow">
-        {blogsData.map((blog, i) => (
+        {blogData.map((blog, i) => (
           <div className="mb-5" key={i}>
             <a href={blog.url} target="_blank" rel="noreferrer noopener">
               <span className="flex">
