@@ -1,3 +1,9 @@
+type Blog = {
+  title: string
+  date: string
+  url: string
+}
+
 export const blogData = [
   {
     title: 'Axios における request method の引数の型定義を調査した話',
@@ -14,5 +20,4 @@ export const blogData = [
     date: '2022-07-28',
     url: 'https://creators.bengo4.com/entry/2022/07/28/083000'
   }
-] as const satisfies Record<'title' | 'date' | 'url', string>[]
-
+] as const satisfies Blog[]
