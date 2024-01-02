@@ -2,7 +2,7 @@
 import React, { FC } from 'react'
 import { Notes } from 'iconoir-react'
 import { getFaviconSrcFromLink } from '../utils/helper'
-import { blogData }from '../data/blog'
+import { blogData } from '../data/blog'
 
 export const Blog: FC = () => {
   return (
