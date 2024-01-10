@@ -2,13 +2,13 @@
   "name": "portfolio-v4.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
     "build:posts": "ts-node --project tsconfig.builder.json ./builder/posts.ts",
-    "start": "next start",
+    "dev": "next dev",
     "lint": "next lint",
-    "test": "jest",
-    "lint:package": "npmPkgJsonLint ."
+    "lint:package": "npmPkgJsonLint .",
+    "start": "next start",
+    "test": "jest"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
