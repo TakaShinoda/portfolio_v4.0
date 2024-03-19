@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Building, GitHub, PinAlt, Twitter } from 'iconoir-react'
+import { Building, Github, MapPin, Twitter } from 'iconoir-react'
 import { Avatar, AvatarImage, AvatarFallback } from './ui/Avatar'
 import { getI18n } from '../locales/server'
 
@@ -20,7 +20,7 @@ export const Personal: FC = async () => {
         <div className="mt-2">
           <p className="group block items-center text-xs font-medium pr-3 my-2 text-gray-500 dark:text-gray-300">
             <span className="group inline-flex items-center">
-              <PinAlt />
+              <MapPin />
               {t('address')}
             </span>
           </p>
@@ -41,7 +41,7 @@ export const Personal: FC = async () => {
           className="group inline-flex items-center text-lg font-medium pr-3 py-2 text-gray-800 dark:text-white"
           aria-label="link to github"
         >
-          <GitHub />
+          <Github />
         </a>
         <a
           href="https://twitter.com/tttttt_621_s"
