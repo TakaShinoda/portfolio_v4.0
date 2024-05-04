@@ -28,7 +28,7 @@ export const Speaker: FC = () => {
                 alt="弁護士ドットコム クリエーターズブログのファビコン画像"
                 className="w-4 h-4 mt-1 mr-1"
               />
-              <span className="font-medium text-gray-800 dark:text-white">
+              <span className="font-medium text-gray-800 dark:text-white hover:text-cyan-500">
                 走りながらエンジンを交換する
                 <br />
                 <span className="text-sm">

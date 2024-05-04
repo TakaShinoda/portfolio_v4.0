@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Building, Github, MapPin, Twitter } from 'iconoir-react'
+import { Building, Github, MapPin, X, Linkedin } from 'iconoir-react'
 import { Avatar, AvatarImage, AvatarFallback } from './ui/Avatar'
 import { getI18n } from '../locales/server'
 
@@ -50,7 +50,16 @@ export const Personal: FC = async () => {
           className="group inline-flex items-center text-lg font-medium pl-2 pr-3 py-2 text-gray-800 dark:text-white"
           aria-label="link to twitter"
         >
-          <Twitter />
+          <X />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/takahiro-shinoda/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="group inline-flex items-center text-lg font-medium pl-2 pr-3 py-2 text-gray-800 dark:text-white"
+          aria-label="link to linkedin"
+        >
+          <Linkedin />
         </a>
       </div>
     </div>

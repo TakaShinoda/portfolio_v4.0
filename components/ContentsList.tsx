@@ -21,7 +21,7 @@ export const ContentsList: FC = () => {
                   alt="遷移先サイトの画像"
                   className="w-4 h-4 mt-1 mr-1"
                 />
-                <span className='className="font-medium text-gray-800 dark:text-white'>
+                <span className='className="font-medium text-gray-800 dark:text-white hover:text-cyan-500'>
                   {content.title}
                 </span>
               </span>
