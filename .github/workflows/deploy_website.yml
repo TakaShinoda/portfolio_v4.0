@@ -29,7 +29,7 @@ jobs:
         run: |
           npm install
           npm run build:posts
-      - uses: amondnet/vercel-action@v20
+      - uses: amondnet/vercel-action@v22
         with:
           # GitHub Actions の Secrets で作成した値を参照する形で
           # Vercel デプロイ時に必要となる各種パラメタを設定する
