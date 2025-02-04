@@ -22,7 +22,7 @@ jobs:
           ref: ${{ github.event.inputs.ref }}
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       # 投稿内容を更新するために npm run build:posts を走らせる
       - name: Recreate all posts
         shell: bash
