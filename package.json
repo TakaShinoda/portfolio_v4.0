@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@radix-ui/react-avatar": "^1.1.9",
+    "@radix-ui/react-avatar": "^1.1.10",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.13",
     "iconoir-react": "^7.10.1",
