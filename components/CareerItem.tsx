@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 type Props = {
   name: string
   from: string
-  to: string
+  to?: string
 }
 
 export const CareerItem: FC<Props> = ({ name, from, to }) => {
