@@ -6,6 +6,11 @@
 
 export const blogData = [
   {
+    title: 'クラウドサインは npm から pnpm へ移行しました',
+    date: '2026-01-26',
+    url: 'https://creators.bengo4.com/entry/2026/01/26/080000'
+  },
+  {
     title: 'フロントエンドの技術的負債と向き合っている話',
     date: '2024-12-23',
     url: 'https://creators.bengo4.com/entry/2024/12/23/000000'
