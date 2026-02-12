@@ -24,8 +24,8 @@
     "vercel": "^31.4.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.3.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/eslint": "8.56.12",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "22.19.9",
