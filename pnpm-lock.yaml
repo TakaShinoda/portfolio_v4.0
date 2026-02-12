@@ -52,8 +52,8 @@ importers:
         specifier: ^14.3.1
         version: 14.3.1(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/eslint':
-        specifier: 8.56.12
-        version: 8.56.12
+        specifier: 9.6.1
+        version: 9.6.1
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -921,8 +921,8 @@ packages:
   '@types/babel__traverse@7.28.0':
     resolution: {integrity: sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==}
 
-  '@types/eslint@8.56.12':
-    resolution: {integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==}
+  '@types/eslint@9.6.1':
+    resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -4808,7 +4808,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.28.6
 
-  '@types/eslint@8.56.12':
+  '@types/eslint@9.6.1':
     dependencies:
       '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
