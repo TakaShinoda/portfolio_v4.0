@@ -26,7 +26,7 @@ jobs:
           run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.21.1'
+          node-version: '22.22.0'
       # 投稿内容を更新するために pnpm run build:posts を走らせる
       - name: Recreate all posts
         shell: bash
