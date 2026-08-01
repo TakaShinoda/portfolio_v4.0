@@ -33,7 +33,7 @@ jobs:
         run: |
           pnpm install
           pnpm run build:posts
-      - uses: amondnet/vercel-action@v25
+      - uses: amondnet/vercel-action@v29
         with:
           # GitHub Actions の Secrets で作成した値を参照する形で
           # Vercel デプロイ時に必要となる各種パラメタを設定する
