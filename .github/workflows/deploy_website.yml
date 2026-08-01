@@ -17,23 +17,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           ref: ${{ github.event.inputs.ref }}
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6.0.9
         with:
           package_json_file: './package.json'
           run_install: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7.0.0
         with:
-          node-version: '22.22.3'
+          node-version: '24.18.1'
       # 投稿内容を更新するために pnpm run build:posts を走らせる
       - name: Recreate all posts
         shell: bash
         run: |
           pnpm install
           pnpm run build:posts
-      - uses: amondnet/vercel-action@v29
+      - uses: amondnet/vercel-action@v42.3.0
         with:
           # GitHub Actions の Secrets で作成した値を参照する形で
           # Vercel デプロイ時に必要となる各種パラメタを設定する
