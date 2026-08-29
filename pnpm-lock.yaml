@@ -18,8 +18,8 @@ importers:
         specifier: ^1.11.23
         version: 1.11.23
       iconoir-react:
-        specifier: ^7.11.1
-        version: 7.11.1(react@18.3.1)
+        specifier: ^7.12.1
+        version: 7.12.1(react@18.3.1)
       next:
         specifier: 16.0.11
         version: 16.0.11(@babel/core@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2344,8 +2344,8 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
 
-  iconoir-react@7.11.1:
-    resolution: {integrity: sha512-uUdoKZ5SvvleMWf+mJWbAxLt5WaEcvBAU3YmO5Ho+JA5JLxBKntT0KNXpJqQArq7b5DxiN5xobIVoDBIPAvA/w==}
+  iconoir-react@7.12.1:
+    resolution: {integrity: sha512-e+Lwgqr10ruCwrCrFjG5RD0axwENFxPzLP1cESiQPEMH9UC/W6dk6u0MYwLoG0MBVsmBYAhVBb5GqO1aSljeGQ==}
     peerDependencies:
       react: 18 || 19
 
@@ -6521,7 +6521,7 @@ snapshots:
 
   human-signals@2.1.0: {}
 
-  iconoir-react@7.11.1(react@18.3.1):
+  iconoir-react@7.12.1(react@18.3.1):
     dependencies:
       react: 18.3.1
 
